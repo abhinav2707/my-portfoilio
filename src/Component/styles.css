@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Honk&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Honk&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    background-color: #eef2e2;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    
+}
+
+.logo {
+    width: 50%;
+    background-color: #1B1C1E;
+   
+}
+.logo1 {
+    height: 140px;
+    width: 100px;
+    padding-left: 30px;
+    background-blend-mode:lighten;
+    margin-top:10px;
+}
+
+.phone {
+    color: white;
+}
+.content {
+    display: flex;
+    gap:60px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 50%;
+    background-color: #8d8ffe;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out; /* Transition for color change */
+    font-family: "Roboto", sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.content1 {
+    color: white;
+}
+.content1:hover {
+    color: white; /* Change color on hover */
+  }
+  
+  /* Animation for the links */
+  .content1::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: white; /* Color of the underline */
+    transition: width 0.3s ease-in-out; /* Transition for underline animation */
+  }
+  
+  .content1:hover::after {
+    width: 100%; /* Expand the underline on hover */
+  }
+   
+  @media screen and (max-width: 600px) { .header { flex-direction: column; } .logo { width: 100%; padding: 10px; } .content { flex-direction: column; } }
+/* Hero Section starts from here */
+
+  .hero {
+    display: flex;
+  }
+  .left {
+   
+    height: 100vh;
+    width: 50%;
+    margin: 0;
+    background-color: #303030;
+  }
+  @media screen and (max-width: 769px) {
+    .left {
+      height:  100%;
+    }
+  }
+  .right {
+   
+    height: 100vh;
+    width: 50%;
+    margin: 0;
+    background-color: #c4c5fd
+  }
+  @media screen and (max-width: 769px) {
+    .right {
+      height:  100%;
+    }
+  }
+  .heroimage {
+    width: 100%;
+    height: 90%;
+    background-color: #a2a3fc;
+  }
+  .firstline {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: flex;
+    margin-left: 12%;
+    align-items: center;
+    margin-top: 150px;
+  }
+  .secondline {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: flex;
+    margin-left: 12%;
+    align-items: center;
+    margin-top: 5px;
+    padding-top: 0;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+/* Typewriter Animation */
+.typewriter {
+    overflow: hidden; /* Ensures the text is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .08em; /* Adjust as needed */
+    animation:
+      typing 4.2s steps(90, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 85% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    40% { border-color: orange; }
+  }
+  
+  /* Apply typewriter animation to thirdline */
+  .thirdline {
+    font-size: 60px;
+    font-weight: 600;
+    color:#a2a3fc;
+    font-family: "Noto Sans", sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: flex;
+    margin-left: 12%;
+    align-items: center;
+    margin-top: 5px;
+    padding-top: 0;
+    padding-top: 0;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  }
+  .a {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 80px;
+    color: #CCD6F6;
+    
+  }
+
+  @media screen and (max-width: 900px) {
+    .left,
+    .right {
+        height: 100%; /* Adjust the height for smaller screens */
+    }
+    .thirdline {
+        padding-bottom: 70px;
+    }
+}
+  /* AboutME section starts header */
+
+  .aboutme {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    width: 70%;
+    height: 100%;
+    border-radius: 40px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: #3a4750;
+  }
+  .aboutmeheading {
+    margin-top: 20px;
+    font-weight: 800;
+    color:#a2a3fc;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    
+  }
+  .aboutme > p {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+  }
+  .outer {
+    width: 70%;
+    height: 100%;
+    padding-top: 9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    font-weight: 600;
+    color: #132743;
+  }
+  .desc {
+    color: white
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeIn {
+    animation: fadeIn 3s ease-out forwards;
+  }
+  
+
+  /* Projects Section starts from here */
+
+  .workheading {
+    text-align: center;
+    font-weight: 800;
+    font-size: 40px;
+    color: #a2a3fc;
+    margin-top: 60px;
+    font-family: "Roboto", sans-serif;
+    color: #142d4c;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+
+  }
+  .description {
+    color: #1B1C1E;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 16px;
+    font-weight: 600 ;
+  }
+
+.chatAppimage {
+  height: 400px;
+  width: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  margin-top: 40px ;
+  margin-left: 6%;
+  
+}
+.project1 {
+  position: relative;
+  display: flex;
+}
+
+.ChatContent {
+  width: auto;
+  height: 250px;
+  margin-top: 100px;
+  border: 1px solid black;
+  margin-left: 40px;
+  
+}
+  /* Projects Sections ends here */
+  .techheading {
+    text-align: center;
+    font-weight: 800;
+    font-size: 40px;
+    color: #a2a3fc;
+    margin-top: 60px;
+    font-family: "Roboto", sans-serif;
+    color: #142d4c;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+
+  }
